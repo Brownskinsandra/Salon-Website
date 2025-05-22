@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>My Tailwind CSS Project</title>
+  <html src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer>
+    // Toggle mobile menu
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+
+<body class="bg-zinc-950 text-white">
+  <!-- Header -->
+  <header>
+    <nav class="flex items-center justify-between py-4 px-6">
+      <h1 class="text-3xl font-bold text-pink-400">021 Beauty Lounge</h1>
+
+      <!-- Hamburger Button -->
+      <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="./index.html" class="text-white hover:text-pink-400">Home</a></li>
+        <li><a href="#about" class="text-white hover:text-pink-400">About</a></li>
+        <li><a href="#services" class="text-white hover:text-pink-400">Services</a></li>
+        <li><a href="#" class="block text-white hover:text-pink-400">Testimonials</a></li>
+        <li><a href="#contact" class="text-white hover:text-pink-400">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+      <li><a href="./index.html" class="block text-white hover:text-pink-400">Home</a></li>
+      <li><a href="#about" class="block text-white hover:text-pink-400">About</a></li>
+      <li><a href="#services" class="block text-white hover:text-pink-400">Services</a></li>
+      <li><a href="#" class="block text-white hover:text-pink-400">Testimonials</a></li>
+      <li><a href="#contact" class="block text-white hover:text-pink-400">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 py-12 gap-8">
+    <!-- Text Content -->
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">Flawless Wig Installations<br /> Tailored Just for
+        You</h1>
+      <p class="text-lg mb-6 text-gray-300">Experience beauty and confidence at <strong>021 Beauty Lounge</strong>. Our
+        expert stylists create seamless, natural-looking wig installations you'll absolutely love.</p>
+      <a href="#appointment"
+        class="inline-block bg-pink-500 font-semibold text-white px-6 py-3 rounded-full hover:bg-pink-600 transition duration-300">Book
+        an Appointment</a>
+    </div>
+
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Wig installation at salon" class="w-full rounded-lg shadow-xl">
+    </div>
+  </section>
+
+  <!-- Optional Welcome Section -->
+  <section class="text-center py-8">
+    <h2 class="text-3xl font-bold mb-2">Welcome to 021 Beauty Lounge</h2>
+    <p class="text-gray-400 max-w-xl mx-auto">Where beauty meets perfection. From classic installs to trendy
+      transformations, we're your go-to salon for premium wig services.</p>
+  </section>
+
+  <!-- About Us-->
+  <section class="bg-zinc-900 py-12 px-6" id="about">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+  
+      <!-- Image -->
+      <div class="w-full md:w-1/2">
+        <img
+          src="https://media.istockphoto.com/id/853924196/photo/female-hairdresser-standing-in-salon.jpg?b=1&s=612x612&w=0&k=20&c=fwqIBIt7DO9gTbvvUEWgX8lVNqgx_husZvWnqcogirY="
+          alt="About Us" class="w-full rounded-lg shadow-lg" />
+      </div>
+  
+      <!-- Text Content -->
+      <div class="w-full md:w-1/2 text-gray-300 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-center text-white mb-8">About Us</h2>
+        <p class="mb-4">
+          At <strong>021 Beauty Lounge</strong>, we don’t just install wigs — we create confidence. Our salon was founded
+          on the belief that every woman deserves to feel beautiful, empowered, and seen.
+        </p>
+        <p class="mb-4">
+          Whether you’re going for a bold new look or enhancing your natural beauty, our expert stylists are here to
+          deliver flawless wig installations that turn heads and lift spirits.
+        </p>
+        <p>
+          We specialize in natural-looking, secure, and long-lasting wig installs using the latest techniques and highest
+          quality products. From frontals and closures to custom styling, every appointment is tailored to fit your unique
+          style and personality.
+        </p>
+        <a href="#appointment"
+          class="inline-block bg-pink-500 font-semibold text-white px-6 py-3 rounded-full hover:bg-pink-600 transition duration-300 my-5">Book
+          an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-zinc-950 py-12 px-6" id="services">
+    <h2 class="text-3xl font-bold text-center mb-6">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-center">
+      <!-- Service 1 -->
+      <div class="bg-zinc-950 p-4 rounded-lg shadow-lg">
+        <img src="data:image/jpeg;base64,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" alt=""  class="rounded-full mb-4 justify-center mx-auto">
+        <h3 class="text-xl font-semibold mb-2">Wig Installations</h3>
+        <p class="text-gray-400">Expert wig installations for a flawless look.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="bg-zinc-950 p-4 rounded-lg shadow-lg">
+        <img src="data:image/jpeg;base64,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" alt=""  class="rounded-full mb-4 justify-center mx-auto">
+        <h3 class="text-xl font-semibold mb-2">Custom Wig Making</h3>
+        <p class="text-gray-400">Tailored wigs made just for you.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="bg-zinc-950 p-4 rounded-lg shadow-lg">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQApAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAMFBgcCAQj/xAA6EAACAQMDAQYEBAUDBAMAAAABAgMABBEFEiExBhMiQVFhFDJxgQcjocFCUpGx8CQz0WJygvEWF0P/xAAZAQADAQEBAAAAAAAAAAAAAAACAwQBBQD/xAAiEQACAgICAgMBAQAAAAAAAAAAAQIRAyESMQQiMkFhBXH/2gAMAwEAAhEDEQA/AJiu1IpkGuwanDCUp0UMrU4HrTR4cV1mmC9B6lqsWnwF5DlyDtTPX39h714xh9xdQ2kLTXMixxr1LHAqm6r+INujPFp0TSY//V+B9hVR1jVLvtFqKRyzqqFsRoThVFStjpEdiD+QZpf52AwPemxgvsE7j1B9elBvkuJkHRBNtUf+IGKen0Gwdcw95GfRsGuys5I7wYkQ/Lt4AHtT83xjEbUyCu8D0A8waanFHuLI+CK/smItrt9o/hJJ/Q5xU9balLbukOpKAHQGOcdD9aEtrK5nZSB+ajYz6+xozW4FSO2t5P8AdRSCoPTNKm4uVINRfG2SuQQCDkY4NdocVA6dM9rMsDklWHhPl9vT6VOKcrkUE48WZY6DRNvyaCBo2yOXxSM3xG4n7EgUJjPFV/VVIbhitW3usw8VW9ZjwSKhxO5Fc/iVmfUHiO1xlR5ihmujLzGadvowSeKjERlbKda6EYojcnY+13KpwWNKo+eaTvCCvSva3ibyL8DXYNNV0DWix4Gvd1NZpE4rTBXV0lrbvPK22ONSzN9KzntFqk9z3jSZD3GMDP8AtoOi/wBs1P8Aam+3sLOPJC4aQereQ/eqlqKMWJOfCP8A3ToR1bBbCeygWKd7trYXMnyRK4yAT1OP861sGnx2zwJDKYjNtG5VHTiqR2D0SW4034qKVEZnI5XJAFXK10q4tvBZRkyMeZHOAM9WJ/YfpU+WVvRVjhS2e6po8LvC8SLu3gEjrjof0rq20SJIUVxxgkD0BqXaHubcJnLKvzMPOoyG9drkI6/OMgjoOen9qT7NDNIjtVklsomWxjCytyz/AMtZ7qr3W7vZSS4bxN0z/wA1ql9Nb90fiFBU55PIz6GqL2jNnJEuGjZF6KhFFitPZmRWgLRNRW7iMEzdTmNj5EeRqYF41tKqvkxN1/6T/wAVmzXkunXzFQ2zPKt1P09DVuj1H4ixjlBDuo3Z/mX/ADrXRTUlsh6Zb0YOAVIKnzqRsYWLBgOKq2iagk7NByMDcoP9qvektGLXB61z/JuMaKMO5B8JBgIPlQZ0CfVW3o6Rx5+Y80SXXu2K0tK7QwWWbe7JUAkq3tUOCPvbKMrajor2udiL61gaeKWOZVGSACDVOtYvz8MPPpWl9pe2FsLCSCwJeaQEZPAUVndrk3G4nJrpr8IyNv7dfiWwKVGXi/nmlXgiwCuq8rysBO801cS93C7sfCozXeai+00xh0e4YHGRgfeiXZhVJrn4rVJJOqjLn68AV7DbG8yyjK8g/egrZSVOOshHPsKkNOu2trW4K5BBBwfSql0LZonYKNLe3a2J8YILL6Gr3GqbeKxnsXrpk7UKjthZY2Xk9ccitHftHaRy/D2ivdXH8sY4H1PSpJpLI6LISbxonZoBJULfaXuyYXCNnIwKkILi9kiVp2t4yeqIpOB9a57wtkMwJ9qVKVdDIq+yuXlgHXZNK3uR+/r/AHqGu9F07ZuijCu5wOMkn61ZtRGMt6Gqq90H1y3gLeEyEgehpcLlbsKVKlRUtd7F30gaWAxhlyY42bDy45OPp/nvFaS0kMMlvKTuUBlJ44IrZkEd1FMzxNuLhUm42geQ/Wsx1KFI+099BtAUZKr6Bgrf3Jqnxsjk6YjPiUVaAVuZrd1uIzhkbp7jqPvWjaTqKXNrFNESVdQfp7VnCsPiJLV8BsBx/SpzshcOtk8QORHMQD+v70eaPJCYujQkuvy25qGvn3OTXaTHbQ1wd1Swx0xzncSMuOabs/8AdoiVa5sk/OqqqEWBXjYnbmvK6vYybl+KVDQyiwYpV7SxQgCxUX2lga40idVG4gbgPpzUpmmpeVatT2eZQYECwADqM0PdTd3C65ALjmm9bvRa6rJFAQQrYx+1RhklnzJIMljjC1UpJoUSHZck9obTGeXIPvxj961WwVNMmERXYp4yfOs07DW7T9rdOhQZMbGSTHQADp/atn7S2El9pjxWqxJNnwO6nj7gios69+y7BqPQ9capaWti00zqqqMli2AKY7NagurWxuotoj3EADn+tUq07BazqFxGuq6oz2qMPCDnNaVY6ZDpdkkEEarGo4pMuKWh1v7ANTw0bofPzrNdbFzZ6vDfQxs/dur49fUf0rRNSkByKgL4hFEh6jJ9qTjnxbGShaDtE1uyutOC2skaFiS6M3ij8/F6CsmvNX+P7VXt9C26FnKqfVRhR+gqY7Va1evpLC3sYrUSYLyxj5gODj096qlvZzWVh3rqQzjd/wBo8qv8eKXsiPyJPUR27ut+ovOjY6YGfSrP2Nu02TREHLMGH1xj9hVHQ5J9alNKv2tJUYHocEU17JkamjeAVy/NC6fdrd2wkBHHBAolulBRow4r2xjzLmusZp/T0HetRgkVeA/EPj1pU9eD/Uv9aVLHIk69NKvKEAR6ULdyiGF3wSQOgoljgVG6vOkFs7u20KCT6ivI8ZLfu8uozGVSjmQ7lbqKejl7uMqCEB81604TDeahJLcSFMktnzNCyNC0ZES7XVuG9R6VSuhbND/B2K2kv7u6kIEyrsGTzgkEn9BWmXd5bnfbxStPKeO7RScH39K+dtAkeLVIHWSSMd4AzRuVIB69PpW9aPqOn2abY5VZWHHO4n71Lmj7F3jyuP8AgfFcXFgv+oQ92P4hzg+9Py6qssfDZry7vJpocW0DAHjdL4f06mgBbquWPDHqKkyJx0UxqXZxJ+aSTUDrUvdwv7cVM3EqxoRmqlqcjXsy2658R5PoKXBbGS6IbWdTt7PRLaKYb5ZT4Y/bPX6UHHKur6f3RkRZic4JwD9qg+1gkj1oxsCdkage3PlUWl5JG+5Dg54x5V1cSUYnKzS5SD7/AE6azdtw8I6H1oVJwm1sZapCxvJruyuhJtMiAFTUUVw3jGCOD9aKgLLh2I1QtO9oz5BGUB8sVeGNZDYSNZ3CTIdsinI9DWmaVqKajarKg2k8MpPSsMZJLRWnDMhoRRR2n4y1agSNvI83L/WlXN4x+IfnHNKsoZYfmvM0q5J9aUePSc1m/aO9nW+uLRm2KZPmbnIrRs1Te3OlLPNFcxjDOpVseZHINFHswqUdgXt5ZkdDt8znn70AsfdsC+B7etdv8RCWgkJCA5K+tMbGYlzyBTwGPQvJDIkiDDbty1rXZLtDBLYQyrZFZQu1pI0GMjyzWWKFktYgPmVjn6f5ipnsxr03Z66kLI0lq3idBjKnpkUGRWtDsM+EjbLS7NyN/PI4Jpu+nVRknBql/wD2Xo4iwgnZvQRmo5+151WYpAjpxwWrnyxze2XrLC9MntU1E5Macsa60HTnMhmkByfM0HoWmzTyiSbLDrk1d4IlSIKAOB5UrroZZkX4jWaJqwKcSGMEiqZ8JIZArcA+Zq9/iRuTtVDvUmNrcbffk1X57mD4iJY1XYzAM3v6V08W4I5eb5sEggNiwkSdOCMqVOGo5Lm3v2/NiWKQei/N6n/PWo2/mlkkEapgeh9a7ktJbMqXlTLAEBGyaMBBV2IduNp3DzK1Pdm5lt+8ZG8D4PXzqt3F286qpVVKjnA5NFaSlz3U3d48jtzyefKhf4Gkvs0e0uYniyWpyK77tiVzWbS6hNbSbTKwYdVzVi0nVku7f5/GvBUnmstnnCL6JuVzLIX9a9qMN970qzkDxLLmuW6GmkmBHJ5r3vRQ0YAXmorp4zcnCZ65qu3+tG9ulYIwt4j0P8VTerxWc7r8ds2DPzHFVG8m08ydxp6M8WeVI8/WjijWyE1W6E980y8HPShEjZ3IyfX7UZfwqsmQFGf1p2wUqkrFAzN0p1CwRG7twqZ255r25uBKSqDpwaJvoO5jJCnJFR6QvjnOT0rTxykDv8v61Zuzlg738SKN3gyagTL3eEzyeDV9/DEG6vbhyoxDEoH3/wDVJy/BjcPzRftIi2WyKBggdKklVvKvIU2jpiiUx1I5rmUdOyp9tOzD6zarcwqPibY7kz/EPNaxu+jkguZ0UFQJCCCM4r6RkkOCNvhxWJ9sLHutW1CLG0vJvQ4xwRVvjvVEXkR+yuRXy71e6ijkdecY+f6in21CGWHalsiux64yx+/pUVcI8TlXTaR+teQS93IGK7hjpVJNYZFcbplVgfTOKLnujFGioxLnqR6fWo5pkd93d4J86J78wxR7B42Ukj/pz6142yTMC6jaNJFC5mAAVF881xbWM1ldbLv/AE8642qeCv1+tGdntRU5tpYj3r/LIX2LGPZRj+tTfaXTYLuzjvVvBqVwE7sKMiQKBnBHzeda4WjUwBXLDJ6+1Kh4bB5LeGSGfwugbb3udp9OaVL4M20XOM+Ig+Rp3y96HibvGLevPFOM3FCgWVLtqZjGh2nug3LVUbaVgSZJCka9VA61pOqxrPZyxOAQw86za8UxPs5wKbExj3fLLceIAkcKPIV5b3fduSflB6etCxtsUsnDkY+gpyKEtC7HGVI++aMELnuGujGhA58R9MU+IQy7owWbH8I4+wqNbckZ9Oh9aN0KOa4u0iiSWQ48KpWr8PAkls8YaSY7R0HqTWrfhLpjWmiTXUi+K5l3DI/hAwP3qA0bsgdSv+8mDsikZVuAMf50rVLO2js7WO3hGFQYxUead+pVhhx2wleRinFUU0OK6D1LRS2PFV2Yqg/iBoouRHcw4MgynPn5j9/61eGeoXXl7y0kRzhGHUdQeoI+9NxumBJWjBtWcu6qygOvDY5zQarwTjpU7rFhJNdSNgKwbGMVHwQNFLtkHhIz0q/shfYKFcHco6etWTs5JZTuIr5VUdDwM5/zFCjTPF/MOo9q6S17h3kjONuPvz1rY6MLdoGhyXM8mpNtChyIbRQN3dgYz9TycVaP/j1jexSPzFdIoxMhKnb9PTigOz/w0kaGbAVFwT0IX6jn+lTIfbC7LM8llyhnz41XnjPmoznPv1NVQimjXoy7U3Sxv5rXduETbQwyMj1pVPa/2VvZdRaSzSNo2UHcRwT6jjpSpDxSs9ZJwoyLjFcSylcgiimPFBzx7gecZqVKgiN1G5QRHe4UedUm/IlZpY+hOPpU92ktriWRIoclD8xzUNHCjK/eS7GQ47vrmmxBZHLEQ+3Ifw9R6+lERqREy8nxAfrzXS9SONoPJojIbcnox/pR0CM/CtcN3cWScgADzrV+xmhR6LZwpPEjXTyFw/8AEoK9Pt+9UDsTBLedoVSORV7tS43Lu6e1bBpiOhYTndIp4fGC315/tVfj403bFzlSCIFCSSIBjJ3D70bGMjBoZ/DMjeox/wAUWOBXO83Hxytlnjy5QRzLhVoTvcE05evsgYnio+Il2zULZUg9H3c0FqMTSQsuPEvIo2FTSnHnjOPKjgm3oGUtGOavA0F/PCVIw3X1HX96AaWMS4dAQKv3ajRUvJhLDlbhhiMKM7vb6Vm2sxzWM7RzxmORTyreX/Irp8JRjbIW03oImu+FAOPDwRTZuS0ZB/8AIVFJcFlJPkMVw1wTyMg0BpeOz+ox7Al2DtjP+4ATgehrQba/tfhWSJt67cYznK1iemXximVt5VenFaJG9jPbR7Y4e+48cWFJ9MgVTgm+gXsmtSvJ7CWO2jRZI0jGwnnC5OBSqB1drlLhFhcsvdjPeckHJ/SlTLZ6g9iaZcnj60qVcsMCu/CCw61SLsbb5sdWbk17SpkOzGeXaLHI6oMDANDhiEZvPApUqcAWj8NDs12SUAbzbnJP/ctafprtLeXRcnw7VUeg615Sq/x/gIydklKMIPYgj7GjSBg15SqD+l2irw+mRGsuQqgHguBXFmMqtKlXKLvsk4wAhNBXTttkbPysAB5UqVdP+dFN7I/JbG44EitjMMtLMMu7HJPt9Kz38RrSKTTWncZkQ5Br2lXVypODJYdmaxsVUEeddS+IjPpSpVyhx3AMkH3q6dmJmltMSAN+aq5PoWFe0qLH2EWjUoQ12w3uNoAGD7Z/elSpVaYf/9k=" alt="" class="rounded-full mb-4 justify-center mx-auto">
+        <h3 class="text-xl font-semibold mb-2">Styling & Maintenance</h3>
+        <p class="text-gray-400">Professional styling and maintenance services.</p>
+      </div>
+    </div>
+
+  </section>
+  
+  <!--get in Touch-->
+  <section id="appointment" class="bg-zinc-950 py-12 px-6 text-white">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">Book an Appointment</h2>
+      <form class="space-y-4 bg-zinc-900 p-6 rounded-lg shadow-lg">
+  
+        <div>
+          <label for="name" class="block mb-2 text-sm font-medium">Full Name</label>
+          <input type="text" id="name" placeholder="Your name"
+            class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+  
+        <div>
+          <label for="service" class="block mb-2 text-sm font-medium">Select Service</label>
+          <select id="service" class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700">
+            <option>Wig Installation</option>
+            <option>Frontal Install</option>
+            <option>Closure Install</option>
+            <option>Wig Revamp</option>
+            <option>Touch-Up</option>
+          </select>
+        </div>
+  
+        <div>
+          <label for="date" class="block mb-2 text-sm font-medium">Preferred Date</label>
+          <input type="date" id="date" class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700">
+        </div>
+  
+        <div>
+          <label for="time" class="block mb-2 text-sm font-medium">Preferred Time</label>
+          <input type="time" id="time" class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700">
+        </div>
+  
+        <div>
+          <label for="contact" class="block mb-2 text-sm font-medium">Phone or WhatsApp Number</label>
+          <input type="tel" id="contact" placeholder="e.g. 08012345678"
+            class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700">
+        </div>
+  
+        <div>
+          <label for="notes" class="block mb-2 text-sm font-medium">Extra Notes (Optional)</label>
+          <textarea id="notes" rows="3" placeholder="Any special requests?"
+            class="w-full px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-700"></textarea>
+        </div>
+  
+        <button type="submit"
+          class="w-full bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition duration-300 rounded-full font-semibold">
+          Submit Appointment
+        </button>
+      </form>
+    </div>
+  </section>  
+
+  <!-- Testimonials Section Placeholder
+  <section id="testimonials" class="py-12 px-6 text-center bg-zinc-800">
+    <h2 class="text-2xl font-bold mb-4">What Our Clients Say</h2>
+    <p class="text-gray-400 mb-2">"I love my new wig! The quality is amazing!"</p>
+    <p class="text-gray-400">"The styling service was top-notch!"</p> -->
+  <!-- Contact Section Placeholder -->
+  <section id="contact" class="py-12 px-6 text-center bg-zinc-800">
+    <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
+    <p class="text-gray-400 mb-2">Call: <strong>+234-XXX-XXX-XXXX</strong></p>
+    <p class="text-gray-400 mb-2">Email:
+    <a href="mailto:021styling@gmail.com"><strong>021styling@gmail.com</strong></a></p>
+    <p class="text-gray-400 mb-2">Follow us on social media:</p> 
+    <div class="flex justify-center space-x-4 mb-4">
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 258">
+          <defs>
+            <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
+              <stop offset="0%" stop-color="#1faf38" />
+              <stop offset="100%" stop-color="#60d669" />
+            </linearGradient>
+            <linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%">
+              <stop offset="0%" stop-color="#f9f9f9" />
+              <stop offset="100%" stop-color="#fff" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#logosWhatsappIcon0)"
+            d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004" />
+          <path fill="url(#logosWhatsappIcon1)"
+            d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z" />
+          <path fill="#fff"
+            d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64" />
+        </svg></a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+          <g fill="none">
+            <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60" />
+            <rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60" />
+            <path fill="#fff"
+              d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396s-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413s.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5s6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355s22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334s-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334" />
+            <defs>
+              <radialGradient id="skillIconsInstagram0" cx="0" cy="0" r="1"
+                gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#fd5" />
+                <stop offset=".1" stop-color="#fd5" />
+                <stop offset=".5" stop-color="#ff543e" />
+                <stop offset="1" stop-color="#c837ab" />
+              </radialGradient>
+              <radialGradient id="skillIconsInstagram1" cx="0" cy="0" r="1"
+                gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3771c8" />
+                <stop offset=".128" stop-color="#3771c8" />
+                <stop offset="1" stop-color="#60f" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+          </g>
+        </svg></a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48" />
+        </svg></a>
+    </div>
+    <p class="text-gray-400">Visit us at Abakaliki (Ai), Ebonyi State.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 py-6 text-center text-gray-400">
+    <p>&copy; 2025 021-Styling. All rights reserved.</p>
+    <p>Designed by <a href="#" class="text-pink-500">Sandra</a></p>
+</body>
+</html>
